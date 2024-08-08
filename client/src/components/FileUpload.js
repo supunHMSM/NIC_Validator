@@ -26,14 +26,14 @@ const FileUpload = () => {
             console.error('Error uploading files', err);
             alert('Failed to upload files');
         }
-
-        return (
-            <form onSubmit={handleSubmit}>
-                <input type="file" multiple onChange={handleFileChange} />
-                <button type="submit">Upload Files</button>
-            </form>
-        )
     };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input type="file" multiple onChange={handleFileChange} />
+            <button type="submit">Upload Files</button>
+        </form>
+    )
    
 }
 
